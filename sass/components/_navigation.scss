@@ -1,0 +1,79 @@
+.nav__list {
+    display: flex;
+    margin-left: 93px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+.nav__studio-link,
+.nav__portfolio-link,
+.nav__contakt-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--accent-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms var(--timing-function);
+}
+
+.nav__portfolio-item,
+.nav__contakt-item {
+    margin-left: 50px;
+}
+
+.nav__studio-link--current,
+.nav__portfolio-link--current {
+    color: var(--logo-web-color);
+    position: relative;
+}
+
+.nav__studio-link--current {
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 4px;
+        background: var(--logo-web-color);
+        border-radius: 2px;        
+    }
+}
+
+.nav__portfolio-link--current {
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 4px;
+        background: var(--logo-web-color);
+        border-radius: 2px;
+    }
+}
+
+.nav__studio-link {
+    &:hover, &:focus {
+        color: var(--logo-web-color);
+    }
+}
+
+.nav__portfolio-link {
+    &:hover, &:focus {
+        color: var(--logo-web-color);
+    }
+}
+
+.nav__contakt-link {
+    &:hover, &:focus {
+        color: var(--logo-web-color);
+    }
+}

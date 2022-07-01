@@ -1,0 +1,58 @@
+.cocial-address {
+    display: block;
+    width: 206px;
+}
+
+
+
+.cocial-address__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--hero-text-color);
+    margin-bottom: 20px;
+}
+
+.cocial-address__list {
+    display: flex;
+    justify-content: center;
+}
+
+.cocial-address__item {
+    width: 44px;
+    height: 44px;
+}
+
+.cocial-address__item {
+   &:not(:first-child) {       
+    margin-left: 10px;
+   }
+}
+
+
+
+
+
+.cocial-address__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff10;
+    border-radius: 50%;
+
+    transition: background-color 250ms var(--timing-function);
+}
+
+.cocial-address__icon {
+    fill: var(--hero-text-color);
+}
+
+.cocial-address__link {
+    &:hover,
+    &:focus {
+        background-color: var(--logo-web-color);
+    }
+}

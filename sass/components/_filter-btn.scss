@@ -1,0 +1,51 @@
+.filter {
+    display: flex;
+    justify-content: center;
+}
+
+
+.filter__btn {
+    padding: 6px 22px;
+
+    font-family: var(--font-family-filter);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--accent-text-color);
+    background-color: var(--team-bg-color);
+    border: 0;
+    border-radius: 4px;
+
+    transition: background-color 250ms var(--timing-function),
+        color 250ms var(--timing-function),
+        box-shadow 250ms var(--timing-function);
+}
+
+.filter__item {
+    &:not(:first-child) {
+        margin-left: 8px;
+    }
+}
+
+.filter__btn--current {
+    background-color: var(--logo-web-color);
+    color: var(--hero-text-color);
+    cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.filter__btn {
+    &:hover,
+    &:focus {
+        background-color: var(--logo-web-color);
+        color: var(--hero-text-color);
+        cursor: pointer;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+            0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}

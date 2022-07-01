@@ -1,0 +1,39 @@
+.address {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--hero-text-color);
+}
+
+
+.address__mail-link,
+.address__tel-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--foot-text-color);
+
+    transition: color 250ms var(--timing-function);
+}
+.address__mail-link {
+    &:hover,
+    &:focus {
+        color: var(--logo-web-color);
+    }
+}
+
+.address__tel-link {
+    &:hover,
+    &:focus {
+        color: var(--logo-web-color);
+    }
+}
+
+.address__mail,
+.address__tel {
+    margin-top: 9px;
+}
+
