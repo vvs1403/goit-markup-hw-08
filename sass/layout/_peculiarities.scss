@@ -6,11 +6,26 @@
 .peculiarities__list {
     display: flex;
     margin: -15px;
+
+    @media screen and (max-width: 767px) {
+        display: block;
+        margin: 0;
+        margin-bottom: 60px;
+    }
 }
 
 .peculiarities__item {
     flex-basis: calc(100%/4 - 30px);
     margin: 15px;
+
+    @media screen and (max-width: 767px) {
+        flex-basis: auto;
+        margin: 0;
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
 }
 
 .peculiarities__item {
@@ -62,6 +77,10 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--accent-text-color);
+
+    @media screen and (max-width: 767px) {
+       text-align: center;
+    }
 }
 
 .peculiarities__text {
@@ -72,4 +91,10 @@
     max-width: 270px;
     margin-top: 10px;
     min-height: 75px;
+
+    @media screen and (max-width: 767px) {
+        max-width: 100%;
+        margin-top: 10px;
+        min-height: 50px;
+    }
 }
