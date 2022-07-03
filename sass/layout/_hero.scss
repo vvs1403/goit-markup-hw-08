@@ -1,33 +1,65 @@
 .hero {
     background-color: var(--hero-bg-color);
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;        
+    }
+
+
 }
 
 .hero--overlay {
-    max-width: 1600px;
-    height: 600px;
+    max-width: 480px;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
     background-image:
         linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(../images/bg-img-hero.jpg);
+        url(../images/bg-img-hero-mob.jpg);
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+        background-image:
+            linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/bg-img-hero-tabl.jpg);
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 1600px;
+        height: 600px;
+        background-image:
+            linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/bg-img-hero.jpg);
+    }
 }
 
 .hero__name {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--hero-text-color);
 
-    max-width: 696px;
+    max-width: 360px;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+        max-width: 696px;
+    }
+
 }
 
 .hero__btn {
