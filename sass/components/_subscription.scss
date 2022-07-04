@@ -7,6 +7,11 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--hero-text-color);
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
 }
 
 .subscription__client {
@@ -26,8 +31,8 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     background-color: var(--hero-bg-color);
-    @media screen and (max-width: 767px) {
-    margin-bottom: 20px;
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 20px;
     }
     
     @media screen and (min-width: 1200px) {        

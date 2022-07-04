@@ -668,13 +668,27 @@ body {
 @media screen and (min-width: 768px) {
   .container--footer {
     display: flex;
-    text-align: start;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container--footer {
+    flex-wrap: nowrap;
+    align-items: baseline;
   }
 }
 
 .footer__logo {
   color: var(--hero-text-color);
   padding: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__conect {
+    text-align: center;
+    margin-bottom: 60px;
+    margin-left: 61px;
+  }
 }
 
 .footer__address {
@@ -687,6 +701,11 @@ body {
 
 .footer__subscription {
   margin-left: auto;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__subscription {
+    margin-right: auto;
+  }
 }
 
 .address {
@@ -735,6 +754,13 @@ body {
     margin-bottom: 60px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .cocial-address {
+    margin-top: 5px;
+    margin-left: 165px;
+    text-align: center;
   }
 }
 
@@ -789,6 +815,12 @@ body {
   text-transform: uppercase;
   color: var(--hero-text-color);
 }
+@media screen and (max-width: 1199px) {
+  .subscription__text {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .subscription__client {
@@ -806,7 +838,7 @@ body {
   border-radius: 4px;
   background-color: var(--hero-bg-color);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .subscription__input-email {
     margin-bottom: 20px;
   }

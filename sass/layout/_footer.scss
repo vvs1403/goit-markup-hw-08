@@ -2,25 +2,36 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    background-color: var(--hero-bg-color);    
+    background-color: var(--hero-bg-color);
 }
 
 .container--footer {
-    // display: flex;
-    // align-items: baseline;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 
     @media screen and (min-width: 768px) {
         display: flex;
-        text-align: start;
+        flex-wrap: wrap;
     }
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+        align-items: baseline;
+    }
+
 }
 
 .footer__logo {
     color: var(--hero-text-color);
     padding: 0;
+}
+.footer__conect {
+    @media screen and (min-width: 768px)
+    and (max-width: 1199px) {
+        text-align: center;
+        margin-bottom: 60px;
+        margin-left: 61px;
+    }
 }
 .footer__address {
     margin-top: 20px;
@@ -28,6 +39,10 @@
 .footer__cocial-address {
     margin-left: 70px;
 }
-.footer__subscription {
+.footer__subscription {    
     margin-left: auto;
+    @media screen and (min-width: 768px)
+    and (max-width: 1199px) {
+    margin-right: auto;
+    }
 }
