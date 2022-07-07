@@ -166,10 +166,19 @@
           <ul class="team__list list">
             <li class="team__item">
               <img
-                src="./images/igor_demynenko.jpg"
+                srcset="
+                  ./images/team-desktop/igor_demynenko_desk-270.jpg 270w,
+                  ./images/team-desktop/igor_demynenko_desk-540.jpg 540w,
+                  ./images/team-tablet/igor_demynenko_tabl-354.jpg  354w,
+                  ./images/team-tablet/igor_demynenko_tabl-708.jpg  708w,
+                  ./images/team-mobil/igor_demynenko_mob-450.jpg    450w,
+                  ./images/team-mobil/igor_demynenko_mob-900.jpg    900w
+                "
+                src="./images/team-desktop/igor_demynenko_desk-270.jpg"
                 alt="Игорь Демьяненко"
-                width="270"
-                height="260"
+                sizes="(min-width: 1200px) 270px, 
+                       (min-width: 768px) 354px,
+                       450px"
               />
               <div class="team__member">
                 <h3 class="team__name">Игорь Демьяненко</h3>
@@ -218,10 +227,19 @@
 
             <li class="team__item">
               <img
-                src="./images/olga_repina.jpg"
+                srcset="
+                  ./images/team-desktop/olga_repina_desk-270.jpg 270w,
+                  ./images/team-desktop/olga_repina_desk-540.jpg 540w,
+                  ./images/team-tablet/olga_repina_tabl-354.jpg  354w,
+                  ./images/team-tablet/olga_repina_tabl-708.jpg  708w,
+                  ./images/team-mobil/olga_repina_mob-450.jpg    450w,
+                  ./images/team-mobil/olga_repina_mob-900.jpg    900w
+                "
+                src="./images/team-desktop/olga_repina_desk-270.jpg"
                 alt="Ольга Репина"
-                width="270"
-                height="260"
+                sizes="(min-width: 1200px) 270px, 
+                       (min-width: 768px) 354px,
+                       450px"
               />
               <div class="team__member">
                 <h3 class="team__name">Ольга Репина</h3>
@@ -269,10 +287,19 @@
             </li>
             <li class="team__item">
               <img
-                src="./images/nikola_tarasov.jpg"
+                srcset="
+                  ./images/team-desktop/nikola_tarasov_desk-270.jpg 270w,
+                  ./images/team-desktop/nikola_tarasov_desk-540.jpg 540w,
+                  ./images/team-tablet/nikola_tarasov_tabl-354.jpg  354w,
+                  ./images/team-tablet/nikola_tarasov_tabl-708.jpg  708w,
+                  ./images/team-mobil/nikola_tarasov-mob-450.jpg    450w,
+                  ./images/team-mobil/nikola_tarasov_mob-900.jpg    900w
+                "
+                src="./images/team-desktop/nikola_tarasov_desk-270.jpg"
                 alt="Николай Тарасов"
-                width="270"
-                height="260"
+                sizes="(min-width: 1200px) 270px, 
+                       (min-width: 768px) 354px,
+                       450px"
               />
               <div class="team__member">
                 <h3 class="team__name">Николай Тарасов</h3>
@@ -320,10 +347,19 @@
             </li>
             <li class="team__item">
               <img
-                src="./images/mihail_ermakov.jpg"
+                srcset="
+                  ./images/team-desktop/mihail_ermakov_desk-270.jpg 270w,
+                  ./images/team-desktop/mihail_ermakov_desk-540.jpg 540w,
+                  ./images/team-tablet/mihail_ermakov_tabl-354.jpg  354w,
+                  ./images/team-tablet/mihail_ermakov_tabl-708.jpg  708w,
+                  ./images/team-mobil/mihail_ermakov_mob-450.jpg    450w,
+                  ./images/team-mobil/mihail_ermakov_mob-900.jpg    900w
+                "
+                src="./images/team-desktop/mihail_ermakov_desk-270.jpg"
                 alt="Михаил Ермаков"
-                width="270"
-                height="260"
+                sizes="(min-width: 1200px) 270px, 
+                       (min-width: 768px) 354px,
+                       450px"
               />
               <div class="team__member">
                 <h3 class="team__name">Михаил Ермаков</h3>
@@ -508,7 +544,7 @@
       </div>
     </footer>
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close class="modal__button-close">
           <svg class="modal__close-icon" width="18" height="18">
@@ -592,7 +628,7 @@
           <button class="modal-form__send-btn" type="submit">Отправить</button>
         </form>
       </div>
-    </div> -->
+    </div>
 
     <script src="./js/modal.js"></script>
   </body>

@@ -1,7 +1,7 @@
 .modal {
     position: absolute;
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
@@ -11,6 +11,11 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 40px;
+
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+        height: 581px;
+    }
 }
 
 .modal__button-close {
@@ -51,16 +56,21 @@
 }
 
 .modal__text {
-    width: 448px;
-    height: 23px;
+    width: 370px;
+    height: 60px;
     margin-bottom: 12px;
 
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.50;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--accent-text-color);
+    
+    @media screen and (min-width: 1200px) {
+        width: 448px;
+        height: 23px;
+        line-height: 1.15;
+    }
 }
 
 .modal-form__input-data {
@@ -144,20 +154,29 @@
     position: relative;
     display: block;
 
-    // width: 425px;
-    // height: 24px;
-    margin-left: 9px;
+    
     margin-right: auto;
     margin-bottom: 32px;
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 9px;
+    }
+
 }
 
 .modal-form__checkbox-item {
     display: block;
     padding-left: 20.38px;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--brand-text-color);
+    
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
+
 }
 
 .modal-form__dogovor-link {
@@ -171,7 +190,12 @@
 .modal-form__check-icon {
     position: absolute;
     left: 0;
-    top: 4px;
+    top: 0;
+
+    @media screen and (min-width: 1200px) {
+        top: 4px;
+    }
+
 }
 .modal-form__check-icon {
     .modal-form__check-input:focus ~ & {

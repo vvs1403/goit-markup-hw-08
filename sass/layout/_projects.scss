@@ -26,6 +26,7 @@
 .project__image {
     position: relative;
     overflow: hidden;
+
 }
 
 .project__overlay {
@@ -45,6 +46,7 @@
 .project__link {
     display: block;
     transition: box-shadow 250ms var(--timing-function);
+
 }
 
 .project__overlay {
@@ -58,8 +60,16 @@
     font-size: 18px;
     line-height: 1.56;
     letter-spacing: 0.03em;
-    width: 322px;
+    width: 402px;
     color: var(--hero-text-color);
+
+    @media screen and (min-width: 768px) {
+        width: 306px;
+    }    
+    @media screen and (min-width: 1200px) {
+        width: 322px;
+    }
+
 }
 
 
@@ -74,12 +84,15 @@
 }
 
 .project__bottom-card {
+
     padding: 20px 24px;
     background: var(--hero-text-color);
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
 }
+
+
 
 .projeсt__name {
     font-weight: 700;

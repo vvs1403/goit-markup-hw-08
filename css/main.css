@@ -26,7 +26,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  width: 100%;
 }
 
 body {
@@ -96,9 +95,16 @@ body {
   border: 1px solid #ECECEC;
 }
 
-.nav__list {
-  display: flex;
-  margin-left: 93px;
+@media screen and (min-width: 768px) {
+  .nav__list {
+    display: flex;
+    margin-left: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav__list {
+    margin-left: 93px;
+  }
 }
 
 .nav {
@@ -519,17 +525,29 @@ body {
   .team__item:not(:last-child) {
     margin-bottom: 30px;
   }
+  .team__item > img {
+    width: 450px;
+    height: 460px;
+  }
 }
 @media screen and (min-width: 768px) {
   .team__item {
     flex-basis: calc(50% - 30px);
     margin: 15px;
   }
+  .team__item > img {
+    width: 354px;
+    height: 374px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .team__item {
     flex-basis: calc(25% - 30px);
     margin: 15px;
+  }
+  .team__item > img {
+    width: 270px;
+    height: 260px;
   }
 }
 
@@ -946,8 +964,10 @@ body {
   }
 }
 
-.portfolio__projeсt {
-  margin: -15px;
+@media screen and (min-width: 768px) {
+  .portfolio__projeсt {
+    margin: -15px;
+  }
 }
 
 .filter {
@@ -1058,8 +1078,18 @@ body {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-  width: 322px;
+  width: 402px;
   color: var(--hero-text-color);
+}
+@media screen and (min-width: 768px) {
+  .project__overlay-text {
+    width: 306px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project__overlay-text {
+    width: 322px;
+  }
 }
 
 .project__link:hover, .project__link:focus {
@@ -1111,8 +1141,8 @@ body {
 
 .modal {
   position: absolute;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -1121,6 +1151,12 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__button-close {
@@ -1155,15 +1191,21 @@ body {
 }
 
 .modal__text {
-  width: 448px;
-  height: 23px;
+  width: 370px;
+  height: 60px;
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--accent-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal__text {
+    width: 448px;
+    height: 23px;
+    line-height: 1.15;
+  }
 }
 
 .modal-form__input-data {
@@ -1233,18 +1275,28 @@ body {
 .modal-form__checkbox {
   position: relative;
   display: block;
-  margin-left: 9px;
   margin-right: auto;
   margin-bottom: 32px;
+}
+@media screen and (min-width: 1200px) {
+  .modal-form__checkbox {
+    margin-left: 9px;
+  }
 }
 
 .modal-form__checkbox-item {
   display: block;
   padding-left: 20.38px;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--brand-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal-form__checkbox-item {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-form__dogovor-link {
@@ -1258,7 +1310,12 @@ body {
 .modal-form__check-icon {
   position: absolute;
   left: 0;
-  top: 4px;
+  top: 0;
+}
+@media screen and (min-width: 1200px) {
+  .modal-form__check-icon {
+    top: 4px;
+  }
 }
 
 .modal-form__check-input:focus ~ .modal-form__check-icon {
