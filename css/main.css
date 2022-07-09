@@ -131,7 +131,7 @@ body {
 
 .menu-container {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -254,6 +254,11 @@ body {
 
 .header {
   border: 1px solid #ECECEC;
+}
+@media screen and (max-width: 767px) {
+  .header {
+    border: none;
+  }
 }
 
 .container--header {

@@ -3,6 +3,10 @@
     color: var(--logo-studio-color);
 }
 .header {
+
+    @media screen and (max-width: 767px) {
+        border: none; 
+    }
     border: 1px solid #ECECEC;
 }
 .container--header {
