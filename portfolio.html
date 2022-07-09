@@ -64,6 +64,44 @@
             </a>
           </li>
         </ul>
+
+        <button type="button"
+                class="btn-mob-menu is-open"
+                aria-expanded="false"
+                aria-controls="menu-container"
+                data-menu-button >
+            <svg class="btn-mob-menu-icon"
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use class="icon-mob-close"  href="./images/symbol-defs-mob.svg#icon-icon-mob-close"></use>
+              <use class="icon-mob-menu"  href="./images/symbol-defs-mob.svg#icon-icon-mob-menu"></use>
+            </svg>
+        </button>
+        <div class="menu-container is-open" id="menu-container" data-menu >
+          <ul class="menu__list list">
+            <li class="menu__studio-item">
+              <a
+                class="menu__studio-link link menu__studio-link--current"
+                href="./index.html"
+                >Студия</a
+              >
+            </li>
+            <li class="menu__portfolio-item">
+              <a class="menu__portfolio-link link menu__portfolio-link--current"
+                 href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="menu__contakt-item">
+              <a class="menu__contakt-link link" href=""
+                >Контакты</a>
+            </li>
+           </ul>
+          
+        </div> 
+
       </div>
     </header>
 

@@ -76,15 +76,169 @@ body {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 .logo__web {
   color: var(--logo-web-color);
+}
+
+.btn-mob-menu {
+  display: inline-flex;
+  position: absolute;
+  right: 15px;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  .btn-mob-menu {
+    display: none;
+  }
+}
+
+.btn-mob-menu .icon-mob-close {
+  display: none;
+}
+
+.btn-mob-menu.is-open .icon-mob-close {
+  display: block;
+}
+
+.btn-mob-menu.is-open .icon-mob-menu {
+  display: none;
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: #fff;
+  padding: 48px 40px;
+  text-align: start;
+  font-size: 20px;
+}
+.menu-container.is-open {
+  display: block;
+}
+
+.menu__studio-link,
+.menu__portfolio-link,
+.menu__contakt-link {
+  display: block;
+  margin-bottom: 32px;
+  color: var(--accent-text-color);
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+}
+
+.menu__studio-link--current,
+.menu__portfolio-link--current {
+  color: var(--logo-web-color);
+}
+
+.menu__studio-link:hover, .menu__studio-link:focus {
+  color: var(--logo-web-color);
+}
+
+.menu__portfolio-link:hover, .menu__portfolio-link:focus {
+  color: var(--logo-web-color);
+}
+
+.menu__contakt-link:hover, .menu__contakt-link:focus {
+  color: var(--logo-web-color);
+}
+
+.icon-mob-close:hover, .icon-mob-close:focus {
+  fill: var(--logo-web-color);
+}
+
+.icon-mob-menu:hover, .icon-mob-menu:focus {
+  fill: var(--logo-web-color);
+}
+
+.menu-social-list {
+  display: flex;
+  position: relative;
+}
+
+.separator:before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 22px;
+  transform: translateX(-10px);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.menu-social-item:not(:first-child) {
+  margin-left: 20px;
+}
+
+.menu-social-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--logo-web-color);
+}
+
+.menu-contact {
+  margin-bottom: 64px;
+}
+
+.menu-contact__tel-item {
+  margin-bottom: 32px;
+}
+
+.menu-contact__tel-link {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--logo-web-color);
+}
+
+.menu-contact__mail-link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--brand-text-color);
+}
+
+.menu__list {
+  margin-bottom: 302px;
 }
 
 .header__logo {
@@ -92,9 +246,15 @@ body {
 }
 
 .header {
+  position: relative;
   border: 1px solid #ECECEC;
 }
 
+@media screen and (max-width: 767px) {
+  .nav__list {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) {
   .nav__list {
     display: flex;
@@ -171,6 +331,11 @@ body {
   color: var(--logo-web-color);
 }
 
+@media screen and (max-width: 767px) {
+  .contact {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) {
   .contact {
     margin-left: auto;
@@ -1087,6 +1252,13 @@ body {
   display: block;
   transition: box-shadow 250ms var(--timing-function);
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .project__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
 
 .project__link:hover .project__overlay, .project__link:focus .project__overlay {
   transform: translateY(-101%);
@@ -1120,6 +1292,11 @@ body {
   border-left: 1px solid #EEEEEE;
   border-right: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .project__bottom-card {
+    flex-grow: 1;
+  }
 }
 
 .projeсt__name {
