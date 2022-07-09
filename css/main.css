@@ -102,16 +102,14 @@ body {
 }
 
 .btn-mob-menu {
-  display: inline-flex;
+  display: block;
   position: absolute;
+  top: 10px;
   right: 15px;
-  margin-left: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
   padding: 0;
   border: none;
   background-color: transparent;
-  z-index: 1;
+  z-index: 2;
 }
 @media screen and (min-width: 768px) {
   .btn-mob-menu {
@@ -133,19 +131,25 @@ body {
 
 .menu-container {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  overflow-y: scroll;
+  overflow-y: auto;
   background-color: #fff;
   padding: 48px 40px;
   text-align: start;
   font-size: 20px;
+  z-index: 1;
 }
 .menu-container.is-open {
   display: block;
+}
+@media screen and (min-width: 768px) {
+  .menu-container.is-open {
+    display: none;
+  }
 }
 
 .menu__studio-link,
@@ -237,8 +241,11 @@ body {
   color: var(--brand-text-color);
 }
 
-.menu__list {
-  margin-bottom: 302px;
+.menu-all {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .header__logo {
@@ -246,8 +253,11 @@ body {
 }
 
 .header {
-  position: relative;
   border: 1px solid #ECECEC;
+}
+
+.container--header {
+  position: relative;
 }
 
 @media screen and (max-width: 767px) {
