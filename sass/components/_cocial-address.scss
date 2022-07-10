@@ -14,10 +14,10 @@
         margin-left: 165px;
         text-align: center;
     }
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
-
-
-
 .cocial-address__title {
     font-weight: 700;
     font-size: 14px;
@@ -42,10 +42,6 @@
     margin-left: 10px;
    }
 }
-
-
-
-
 
 .cocial-address__link {
     display: flex;

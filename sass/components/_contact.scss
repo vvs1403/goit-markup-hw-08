@@ -12,14 +12,19 @@
         align-items: center;
     }    
 }
+@media screen and (min-width: 768px) {
+    .contact__mail-link {
+        padding-top: 21px;
+    }
+    .contact__tel-link {
+        padding-bottom: 21px;
+    }    
+}
 
 .contact__mail-link,
 .contact__tel-link {
 
     @media screen and (min-width: 768px) {
-        padding-top: 21px;
-        padding-bottom: 21px;
-
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;

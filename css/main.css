@@ -134,6 +134,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  transform: scale(1);
+  transition: transform 500ms var(--timing-function);
   width: 100%;
   height: 100vh;
   overflow-y: auto;
@@ -181,32 +183,40 @@ body {
   color: var(--logo-web-color);
 }
 
-.icon-mob-close:hover, .icon-mob-close:focus {
-  fill: var(--logo-web-color);
+.icon-mob-close {
+  fill: var(--logo-studio-color);
+  transition: fill 250ms var(--timing-function);
 }
 
-.icon-mob-menu:hover, .icon-mob-menu:focus {
+.icon-mob-menu {
+  fill: var(--logo-studio-color);
+  transition: fill 250ms var(--timing-function);
+}
+
+.btn-mob-menu:hover .icon-mob-close,
+.btn-mob-menu:focus .icon-mob-close {
   fill: var(--logo-web-color);
+  cursor: pointer;
+}
+
+.btn-mob-menu:hover .icon-mob-menu,
+.btn-mob-menu:focus .icon-mob-menu {
+  fill: var(--logo-web-color);
+  cursor: pointer;
 }
 
 .menu-social-list {
   display: flex;
-  position: relative;
+  flex-wrap: wrap;
 }
 
-.separator:before {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  width: 0;
-  height: 22px;
-  transform: translateX(-10px);
-  border: 1px solid rgba(33, 33, 33, 0.2);
+.separator {
+  padding-left: 10px;
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .menu-social-item:not(:first-child) {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .menu-social-link {
@@ -254,11 +264,6 @@ body {
 
 .header {
   border: 1px solid #ECECEC;
-}
-@media screen and (max-width: 767px) {
-  .header {
-    border: none;
-  }
 }
 
 .container--header {
@@ -365,10 +370,17 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .contact__mail-link {
+    padding-top: 21px;
+  }
+
+  .contact__tel-link {
+    padding-bottom: 21px;
+  }
+}
+@media screen and (min-width: 768px) {
   .contact__mail-link,
 .contact__tel-link {
-    padding-top: 21px;
-    padding-bottom: 21px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -723,6 +735,8 @@ body {
   .team__item:not(:last-child) {
     margin-bottom: 30px;
   }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .team__item > img {
     width: 450px;
     height: 460px;
@@ -905,15 +919,17 @@ body {
   margin-right: auto;
   text-align: center;
 }
-@media screen and (min-width: 768px) {
-  .container--footer {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
 @media screen and (min-width: 1200px) {
   .container--footer {
-    flex-wrap: nowrap;
+    display: flex;
+    align-items: baseline;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-address-cocial {
+    display: flex;
     align-items: baseline;
   }
 }
@@ -928,6 +944,11 @@ body {
     text-align: center;
     margin-bottom: 60px;
     margin-left: 61px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__conect {
+    text-align: left;
   }
 }
 
@@ -1003,6 +1024,11 @@ body {
     text-align: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .cocial-address {
+    text-align: left;
+  }
+}
 
 .cocial-address__title {
   font-weight: 700;
@@ -1071,12 +1097,16 @@ body {
 .subscription__input-email {
   display: inline-block;
   padding-left: 16px;
-  width: 450px;
   height: 50px;
   color: var(--hero-text-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: var(--hero-bg-color);
+}
+@media screen and (min-width: 480px) {
+  .subscription__input-email {
+    width: 450px;
+  }
 }
 @media screen and (max-width: 1199px) {
   .subscription__input-email {
@@ -1172,6 +1202,11 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 399px) {
+  .filter {
+    gap: 1rem;
+  }
+}
 @media screen and (min-width: 768px) {
   .filter {
     flex-wrap: nowrap;
@@ -1194,10 +1229,12 @@ body {
   transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
 
-.filter__item:not(:first-child) {
-  margin-left: 8px;
+@media screen and (min-width: 400px) {
+  .filter__item:not(:first-child) {
+    margin-left: 8px;
+  }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 400px) and (max-width: 767px) {
   .filter__item:nth-child(4) {
     margin-top: 15px;
     margin-left: 0px;
@@ -1258,9 +1295,13 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
-  justify-content: center;
-  align-items: center;
   transition: transform 250ms var(--timing-function);
+}
+@media screen and (min-width: 480px) {
+  .project__overlay {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .project__link {
@@ -1282,8 +1323,8 @@ body {
 .project__overlay-text {
   font-size: 18px;
   line-height: 1.56;
+  overflow-y: scroll;
   letter-spacing: 0.03em;
-  width: 402px;
   color: var(--hero-text-color);
 }
 @media screen and (min-width: 768px) {
@@ -1382,7 +1423,6 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background: var(--hero-text-color);
-  cursor: pointer;
   transition: border-color 250ms var(--timing-function);
 }
 
@@ -1394,6 +1434,7 @@ body {
 
 .modal__button-close:hover, .modal__button-close:focus {
   border-color: var(--logo-web-color);
+  cursor: pointer;
 }
 
 .modal__button-close:hover .modal__close-icon, .modal__button-close:focus .modal__close-icon {
@@ -1409,6 +1450,7 @@ body {
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--accent-text-color);
 }
 @media screen and (min-width: 1200px) {
   .modal__text {
@@ -1428,7 +1470,6 @@ body {
 }
 
 .modal-form__label-item {
-  display: block;
   margin-bottom: 4px;
   width: 25px;
   height: 14px;

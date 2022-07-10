@@ -43,8 +43,11 @@
 
     @media screen and (max-width: 767px) {
         &:not(:last-child) {
-          margin-bottom: 30px;          
-        }        
+            margin-bottom: 30px;
+        }
+    }
+    @media screen and (min-width: 480px) 
+                  and (max-width: 767px) {
         &>img {
             width: 450px;
             height: 460px;
