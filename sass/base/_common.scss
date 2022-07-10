@@ -19,6 +19,10 @@ body {
     background-color: var(--hero-text-color);
 }
 
+body.modal-open {
+    overflow: hidden;
+}
+
 .link {
     text-decoration: none;
 }

@@ -34,6 +34,10 @@ body {
   background-color: var(--hero-text-color);
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .link {
   text-decoration: none;
 }
@@ -147,6 +151,7 @@ body {
 .menu-container.is-open {
   display: block;
   transform: scale(1);
+  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .menu-container.is-open {
