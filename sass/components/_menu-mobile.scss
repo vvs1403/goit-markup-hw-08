@@ -27,11 +27,11 @@
 }
 
 .menu-container {
-    display: none;
+    // display: none;
     position: absolute;
     top: 0;
     left: 0;
-    transform: scale(1);
+    transform: scale(0);
     transition: transform 500ms var(--timing-function);
 
 
@@ -47,11 +47,14 @@
 
     &.is-open {
         display: block;
+        transform: scale(1);
+        
         @media screen and (min-width: 768px) {
             display: none;
         }
     }
 }
+
 .menu__studio-link,
 .menu__portfolio-link,
 .menu__contakt-link {
