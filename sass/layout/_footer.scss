@@ -22,6 +22,13 @@
     @media screen and (min-width: 768px) {
         display: flex;
         align-items: baseline;
+        margin-bottom: 60px;
+
+        @media screen and (min-width: 768px)
+                      and (max-width: 1199px) {
+            padding-left: 61px;
+            padding-right: 74px;
+        }
     }
     
 }
@@ -35,8 +42,8 @@
     @media screen and (min-width: 768px)
     and (max-width: 1199px) {
         text-align: center;
-        margin-bottom: 60px;
-        margin-left: 61px;
+        // margin-bottom: 60px;
+        // margin-left: 61px;
     }
     @media screen and (min-width: 1200px) {
         text-align: left;

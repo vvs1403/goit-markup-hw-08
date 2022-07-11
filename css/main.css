@@ -935,6 +935,13 @@ body.modal-open {
   .footer-address-cocial {
     display: flex;
     align-items: baseline;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 768px) and (max-width: 1199px) {
+  .footer-address-cocial {
+    padding-left: 61px;
+    padding-right: 74px;
   }
 }
 
@@ -946,8 +953,6 @@ body.modal-open {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__conect {
     text-align: center;
-    margin-bottom: 60px;
-    margin-left: 61px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1023,8 +1028,7 @@ body.modal-open {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .cocial-address {
-    margin-top: 5px;
-    margin-left: 165px;
+    margin-left: auto;
     text-align: center;
   }
 }
@@ -1330,6 +1334,11 @@ body.modal-open {
   overflow-y: scroll;
   letter-spacing: 0.03em;
   color: var(--hero-text-color);
+}
+@media screen and (max-width: 479px) {
+  .project__overlay-text {
+    padding: 15px;
+  }
 }
 @media screen and (min-width: 768px) {
   .project__overlay-text {

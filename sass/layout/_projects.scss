@@ -71,6 +71,10 @@
     letter-spacing: 0.03em;
     color: var(--hero-text-color);
 
+    @media screen and (max-width: 479px) {
+        padding: 15px;
+    }
+
     @media screen and (min-width: 768px) {
         width: 306px;
     }    
