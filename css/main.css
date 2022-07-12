@@ -105,6 +105,12 @@ body.modal-open {
   color: var(--logo-web-color);
 }
 
+@media screen and (min-width: 768px) {
+  .menu-mob-all {
+    display: none;
+  }
+}
+
 .btn-mob-menu {
   display: block;
   position: absolute;
@@ -246,6 +252,11 @@ body.modal-open {
   letter-spacing: 0.02em;
   color: var(--logo-web-color);
 }
+@media screen and (max-width: 479px) {
+  .menu-contact__tel-link {
+    font-size: 22px;
+  }
+}
 
 .menu-contact__mail-link {
   font-weight: 500;
@@ -377,7 +388,6 @@ body.modal-open {
   .contact__mail-link {
     padding-top: 21px;
   }
-
   .contact__tel-link {
     padding-bottom: 21px;
   }
@@ -1111,6 +1121,11 @@ body.modal-open {
   border-radius: 4px;
   background-color: var(--hero-bg-color);
 }
+@media screen and (max-width: 479px) {
+  .subscription__input-email {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 480px) {
   .subscription__input-email {
     width: 450px;
@@ -1415,6 +1430,11 @@ body.modal-open {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
+}
+@media screen and (max-width: 479px) {
+  .modal {
+    padding: 20px;
+  }
 }
 @media screen and (min-width: 480px) {
   .modal {

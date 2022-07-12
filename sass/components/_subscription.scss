@@ -31,6 +31,9 @@
     border-radius: 4px;
     background-color: var(--hero-bg-color);
 
+    @media screen and (max-width: 479px) {
+        width: 100%;
+    }
     @media screen and (min-width: 480px) {
         width: 450px;
     }
